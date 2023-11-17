@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="api.css">
+<body>
 
-    </head>
-    <body>
-        <button onclick="getWeather()">abc</button>
-        <p id="abc"></p>
-    </body>
-    <script>
-        async function getWeather(data) {
-            // Grabbing the search input element by its ID
-    let searchInput = document.getElementById("search-input");
+<h2>JavaScript Geolocation</h2>
 
-    // Getting the value (place) entered by the user in the search input
-    let place = searchInput.value;
-    
-    document.getElementById("abc").innerHTML = place;
+<p>Click the button to get your coordinates.</p>
 
+<button onclick="getLocation()">Try It</button>
 
-        }
-      
+<p id="demo"></p>
 
-    </script>
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
 </html>
