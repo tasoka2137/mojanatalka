@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="api.css">
+
+    </head>
+    <body>
+        <button onclick="getWeather()">abc</button>
+        <p id="abc"></p>
+    </body>
+    <script>
+        async function getWeather(data) {
+            // Grabbing the search input element by its ID
+    let searchInput = document.getElementById("search-input");
+
+    // Getting the value (place) entered by the user in the search input
+    let place = searchInput.value;
+    
+    document.getElementById("abc").innerHTML = place;
+
+
+        }
+      
+
+    </script>
+</html>
