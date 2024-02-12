@@ -3,8 +3,8 @@
     
 }
 .button{
-    color: rgb(89, 0, 255);
-    background-color: rgb(225, 11, 76);
+    color: rgb(226, 136, 202);
+    background-color: rgb(14, 42, 47);
     width: 25%;
     aspect-ratio: 5 / 1;
     margin: 0 4%; 
@@ -21,13 +21,13 @@ body{
     background: rgb(277, 38, 54);
 }
 .pyt{
-    color: rgb(185, 187, 213);
+    color: rgb(14, 42, 47);
     font-size: 5vw;
     
    
 }
 .pyt2{
-    color: rgb(185, 187, 213);
+    color: rgb(14, 42, 47);
     font-size: 3vw;
 }
 #question{
